@@ -8,7 +8,7 @@
     --color-tertiary: #272727;
 
     --max-width: 450px;
-    --min-width: 350px;
+    --min-width: 150px;
 
     --card-margin: 10px;
 }
@@ -29,7 +29,7 @@ body {
     font-size: .9rem;
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    /* padding: 5rem 0rem; */
+    padding: 5rem 0rem;
 }
 
 a {
@@ -41,7 +41,6 @@ h5 {
     font-weight: 400;
     font-size: .7rem ;
     padding-top: 30px;
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
 }
 
 hr {
@@ -49,13 +48,11 @@ hr {
     margin: 10px 0;
     border-radius: 10px;
     border-color: var(--color-primary) ;
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
 }
 
 #header {
     display: flex;
     align-items: center;
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
 }
 
 .header-text {
@@ -79,7 +76,6 @@ hr {
     margin-top: var(--card-margin);
     border-radius: 10px;
     border: 1px solid var(--color-tertiary);
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
 }
 
 
@@ -187,14 +183,12 @@ img:not(.logo img) {
     margin: 20px 0;
     font-family: 'Damion';
     font-size: 1.5rem;
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
 }
 .logo img {
     max-width: 40px;
 }
 footer {
     font-size: .7rem;
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
 }
 
 
@@ -214,6 +208,21 @@ footer {
         color: var(--color-primary)
     }
 }
+.animation-0 {
+    animation: autoShowAnimation .6s cubic-bezier(.68,.25,.53,.64);
+}
+.animation-1 {
+    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
+}
+.animation-2 {
+    animation: autoShowAnimation 1s cubic-bezier(.68,.25,.53,.64);
+}
+.animation-3 {
+    animation: autoShowAnimation 1.2s cubic-bezier(.68,.25,.53,.64);
+}
+.animation-4 {
+    animation: autoShowAnimation 1.4s cubic-bezier(.68,.25,.53,.64);
+}
 
 
 @keyframes autoShowAnimation {
@@ -224,5 +233,12 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
+    }
+}
+
+@media screen and (max-width: 490px) {
+    :root {
+        --max-width: 300px;
+        --min-width: 200px;
     }
 }
