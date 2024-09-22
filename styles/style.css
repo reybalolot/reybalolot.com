@@ -24,14 +24,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
 
     font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: .9rem;
     color: var(--color-primary);
     background-color: var(--color-secondary);
-    padding: 5rem 0rem;
 }
-
 a {
     text-decoration: none;
     color: var(--color-primary);
@@ -44,7 +43,6 @@ h5 {
 }
 
 hr {
-    top: 10rem;
     margin: 10px 0;
     border-radius: 10px;
     height: 1px;
@@ -192,6 +190,12 @@ footer {
     font-size: .7rem;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Damion';
+    color: var(--color-secondary);
+}
 
 .card:hover {
     transition: border-color .3s ease-in;
@@ -210,19 +214,20 @@ footer {
     }
 }
 .animation-0 {
-    animation: autoShowAnimation .6s cubic-bezier(.68,.25,.53,.64);
+    /* animation: autoShowAnimation .6s cubic-bezier(.68,.25,.53,.64); */
+    animation: autoShowAnimation .6s cubic-bezier(0,.46,.95,1.1);;
 }
 .animation-1 {
-    animation: autoShowAnimation .8s cubic-bezier(.68,.25,.53,.64);
+    animation: autoShowAnimation .8s cubic-bezier(0,.46,.95,1.1);;
 }
 .animation-2 {
-    animation: autoShowAnimation 1s cubic-bezier(.68,.25,.53,.64);
+    animation: autoShowAnimation 1s cubic-bezier(0,.46,.95,1.1);;
 }
 .animation-3 {
-    animation: autoShowAnimation 1.2s cubic-bezier(.68,.25,.53,.64);
+    animation: autoShowAnimation 1.2s cubic-bezier(0,.46,.95,1.1);;
 }
 .animation-4 {
-    animation: autoShowAnimation 1.4s cubic-bezier(.68,.25,.53,.64);
+    animation: autoShowAnimation 1.4s cubic-bezier(0,.46,.95,1.1);;
 }
 
 
