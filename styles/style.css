@@ -30,6 +30,7 @@ body {
     font-size: .9rem;
     color: var(--color-primary);
     background-color: var(--color-secondary);
+    /* cursor: none; */
 }
 a {
     text-decoration: none;
@@ -75,6 +76,7 @@ hr {
     margin-top: var(--card-margin);
     border-radius: 10px;
     border: 1px solid var(--color-tertiary);
+    transition: border 1s;
 }
 
 
@@ -197,6 +199,22 @@ footer {
     color: var(--color-secondary);
 }
 
+.cursor {
+    top: calc(inherit);
+    left: calc(inherit);
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition: 90ms ease-out;
+}
+.cursor-green {
+    background-color: green;
+    border-color: transparent;
+    transition: background-color 1s;
+}
+
 .card:hover {
     transition: border-color .3s ease-in;
     color: var(--color-primary);
@@ -210,9 +228,10 @@ footer {
         color: var(--color-primary);
     }
     .project-link a:hover {
-        color: var(--color-primary)
+        color: var(--color-primary);
     }
 }
+
 .animation-0 {
     /* animation: autoShowAnimation .6s cubic-bezier(.68,.25,.53,.64); */
     animation: autoShowAnimation .6s cubic-bezier(0,.46,.95,1.1);;
@@ -229,7 +248,6 @@ footer {
 .animation-4 {
     animation: autoShowAnimation 1.4s cubic-bezier(0,.46,.95,1.1);;
 }
-
 
 @keyframes autoShowAnimation {
     from {
