@@ -7,9 +7,9 @@ document.addEventListener('mousemove', (e) => {
 
 card.forEach(el => {
     el.addEventListener('mouseenter', () => {
-        // cursor.classList.add('cursor-green');
+        cursor.classList.add('cursor-green');
     })
     el.addEventListener('mouseleave', () => {
-        // cursor.classList.remove('cursor-green');
+        cursor.classList.remove('cursor-green');
     })
 })
