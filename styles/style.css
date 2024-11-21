@@ -64,7 +64,8 @@ hr {
 .user-profile {
     width: 50px;
     height: 50px;
-    background-image: url('/images/R.png');
+    /* background-image: url('/images/R.png'); */
+    background-image: url('reybalolot.com/images/R.png');
     background-position: center;
     background-size: cover;
     border-radius: 10%;
