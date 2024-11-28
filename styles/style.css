@@ -101,6 +101,11 @@ img:not(.logo img) {
     display: flex;
     align-items: center;
 }
+
+.name:hover {
+    text-decoration: underline;
+}
+
 .project-link {
     padding: 5px 0;
     display: flex;
@@ -210,8 +215,33 @@ footer {
     position: absolute;
     transition: 90ms ease-out;
 }
+
+.cursor-note {
+    font-size: x-small;
+    top: calc(inherit);
+    left: calc(inherit);
+    padding: 5px;
+    width: auto;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 10px;
+    position: absolute;
+    transition: 220ms ease-in-out;
+    background-color: #272727;
+}
+
+.cursor-hidden {
+    display: none;
+}
+
 .cursor-green {
     background-color: green;
+    border-color: transparent;
+    transition: background-color 1s;
+}
+
+.cursor-red {
+    background-color: red;
     border-color: transparent;
     transition: background-color 1s;
 }
