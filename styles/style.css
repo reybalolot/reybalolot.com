@@ -10,6 +10,8 @@
     --max-width: 450px;
     --min-width: 150px;
 
+    --minf-width:450px;
+
     --card-margin: 10px;
 }
 
@@ -102,10 +104,6 @@ img:not(.logo img) {
     align-items: center;
 }
 
-.name:hover {
-    text-decoration: underline;
-}
-
 .project-link {
     padding: 5px 0;
     display: flex;
@@ -145,7 +143,7 @@ img:not(.logo img) {
     gap: 5px;
 }
 
-.technologies .card,
+.email .card, .technologies .card,
 .contact > .card {
     display: flex;
     align-items: center;
@@ -170,7 +168,6 @@ img:not(.logo img) {
     justify-content: center;
     align-items: center;
     padding-right: 10px;
-
 }
 
 .fa-icon {
@@ -223,7 +220,8 @@ footer {
     padding: 5px;
     width: auto;
     height: auto;
-    border: 1px solid green;
+    /* border: 1px solid #3eb489; */
+    border: 1px solid #893EB4;
     border-radius: 10px;
     position: absolute;
     transition: 220ms ease-in-out;
@@ -261,6 +259,21 @@ footer {
     .project-link a:hover {
         color: var(--color-primary);
     }
+}
+
+.form-card {
+    width: 100%;
+    background-color: transparent;
+}
+
+.btn:hover {
+    border-color: green;
+}
+
+.form-container {
+    min-width: 450px;
+    max-width: 450px;
+    width: 100%;
 }
 
 .animation-0 {
